@@ -127,7 +127,7 @@ public class ChallengeSolver {
 
 			// (1.3) Restrições de capacidade dos corredores:
 			// Para cada corredor 'ai' e item 'it':
-			// Sum_{ai,it} X_AI[ai,or,it] - aisles[ai,it]*X_AI[ai]<=0.
+			// Sum_{or} X_AI[ai,or,it] - aisles[ai,it]*X_AI[ai]<=0.
 			for (int ai = 0; ai < nAisles; ai++) {
 				for (int it = 0; it < nItems; it++) {
 					if (aisles.get(ai).getOrDefault(it, 0) > 0) {
@@ -187,7 +187,7 @@ public class ChallengeSolver {
 			int stepit = Math.max(1, (int) Math.round((double) nItems / 50));
 
 			// (2.2) Restrição: Obtenção do número aproximado de corredores ativos
-			// Sum_[ai] X_AI[ai] - Sum_{na} ((na+1) * X_NA[na])-P*FOLGA_NA = 0. (na+1 pois a baase é 0)
+			// Sum_[ai] X_AI[ai] - Sum_{na} ((na+1) * X_NA[na])-FOLGA_NA = 0. (na+1 pois a baase é 0)
 			Expr.clear();
 			Expr = cplex.linearIntExpr();
 			for (int na = 0; na < nAisles; na += stepna) {
@@ -210,7 +210,7 @@ public class ChallengeSolver {
 			cplex.addEq(Expr, 1);
 
 			// (2.4) Restrição: Obtenção do número aproximado de itens na wave.
-			// Sum_[ai,or,it] X_AS[ai,or,it] - Sum_{it} ((it+1) * X_IT[it])-P*FOLGA_IT = 0.
+			// Sum_[ai,or,it] X_AS[ai,or,it] - Sum_{it} ((it+1) * X_IT[it])-FOLGA_IT = 0.
 			Expr.clear();
 			Expr = totalItemsExpr;
 			for (int it = 0; it < nItems; it += stepit) {
