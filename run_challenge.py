@@ -4,7 +4,8 @@ import sys
 import platform
 
 # Paths to the libraries
-CPLEX_PATH = "$HOME/CPLEX_Studio2211/opl/bin/arm64_osx/"
+#CPLEX_PATH = "/opt/ibm/ILOG/CPLEX_Studio2211/cplex/bin/x86-64_linux/" <-Usado no desenvolvimento
+CPLEX_PATH = "$HOME/CPLEX_Studio2211/opl/bin/arm64_osx/" # Original do ML
 OR_TOOLS_PATH = "$HOME/Documents/or-tools/build/lib/"
 
 USE_CPLEX = True
