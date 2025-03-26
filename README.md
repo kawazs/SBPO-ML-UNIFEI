@@ -15,8 +15,8 @@
 - Java 11
 - Maven
 - Python 3.8 or higher
-- CPLEX 22.11 (optional)
-- OR-Tools 9.11 (optional)
+- CPLEX 22.11
+
 
 ## Setup
 
