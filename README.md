@@ -24,7 +24,7 @@
     ```sh
     git clone https://github.com/kawazs/SBPO-ML-UNIFEI
     ```
-2. Set the paths to CPLEX and OR-Tools libraries in `run_challenge.py` if needed, e.g.:
+2. Set the paths to CPLEX libraries in `run_challenge.py` if needed, e.g.:
     ```sh
     cplex_path = "$HOME/CPLEX_Studio2211/opl/bin/arm64_osx/"
     ```
