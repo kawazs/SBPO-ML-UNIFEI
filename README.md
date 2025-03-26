@@ -59,3 +59,7 @@ python checker.py <input_file> <solution_file>
     ```sh
     python checker.py src/main/resources/instances/instance_001.txt output/instance_001.txt
     ```
+3. Check all (Linux):
+    ```sh
+    for i in $(seq -w 1 20); do     python3 checker.py         /home/luiz/Doutorado/JAVA/challenge-sbpo-2025/datasets/a/instance_00${i}.txt         /home/luiz/Doutorado/JAVA/challenge-sbpo-2025/output/instance_00${i}.txt; done
+    ```
