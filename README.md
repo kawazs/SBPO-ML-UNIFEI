@@ -1,28 +1,5 @@
 # challenge-sbpo-2025
 
-Welcome to the Mercado Libre First Optimization Challenge repository! This challenge is part of the [LVII Brazilian Symposium on Operations Research (SBPO 2025)](https://sbpo2025.galoa.com.br/sbpo-2025/page/5407-home). For further details, please read the post on Medium ([Portuguese version](https://medium.com/mercadolibre-tech/desafio-mercado-livre-de-otimiza%C3%A7%C3%A3o-3a4009607ee3); [Spanish version](https://medium.com/mercadolibre-tech/primer-desaf%C3%ADo-mercado-libre-de-optimizaci%C3%B3n-e8dad236054c)).
-In this repository, you will find the base code for the framework, documentation, and other resources related to the challenge.
-
-## Change Log
-
-- **05-03-2025**: Updated the challenge rules to clarify that, due to allowing a multithread environment, no seed for random generation will be provided.
-- **27-02-2025**: Updated the challenge rules to include specific details of the computer environment in which the challenge will be run.
-- **21-02-2025**: Corrected OR-Tools version to 9.11.
-- **17-01-2025**: Base framework code, documentation and dataset `A`.
-
-## Challenge Rules and Problem Description
-
-Spanish and Portuguese versions of the challenge rules and problem description can be found in the `docs` directory:
-
-- **Spanish**:
-  - [Problem description](docs/es_problem_description.pdf)
-  - [Challenge rules](docs/es_challenge_rules.pdf)
-
-
-- **Portuguese**:
-  - [Problem description](docs/pt_problem_description.pdf)
-  - [Challenge rules](docs/pt_challenge_rules.pdf)
-
 ## Project Structure
 
 - `src/main/java/org/sbpo2025/challenge`
