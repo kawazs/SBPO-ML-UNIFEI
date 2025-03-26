@@ -12,7 +12,7 @@
 
 ## Prerequisites
 
-- Java 11
+- Java 17
 - Maven
 - Python 3.8 or higher
 - CPLEX 22.11
