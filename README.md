@@ -27,7 +27,7 @@ Spanish and Portuguese versions of the challenge rules and problem description c
 
 - `src/main/java/org/sbpo2025/challenge`
   - `Challenge.java` ⟶ Main Java class for reading an input, solving the challenge, and writing the output.
-  - `ChallengeSolver.java` ⟶ Java class responsible for solving the wave order picking problem. Most of the solving logic should be implemented here.
+  - `ChallengeSolver.java` ⟶ Java class responsible for solving the wave order picking problem.
   - `ChallengeSolution.java` ⟶ Java class representing the solution to the wave order picking problem.
 - `datasets/` ⟶ Directory containing input instance files.
 - `run_challenge.py` ⟶ Python script to compile code, run benchmarks, and evaluate solutions.

@@ -1,7 +1,7 @@
 package org.sbpo2025.challenge;
 
 import org.apache.commons.lang3.time.StopWatch;
-
+import ilog.concert.IloException;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -119,10 +119,16 @@ public class Challenge {
 
         Challenge challenge = new Challenge();
         challenge.readInput(args[0]);
-        var challengeSolver = new ChallengeSolver(
-                challenge.orders, challenge.aisles, challenge.nItems, challenge.waveSizeLB, challenge.waveSizeUB);
-        ChallengeSolution challengeSolution = challengeSolver.solve(stopWatch);
 
+        ChallengeSolution challengeSolution = null;  // Declare outside the try block
+        try {
+            ChallengeSolver challengeSolver = new ChallengeSolver(
+                challenge.orders, challenge.aisles, challenge.nItems, challenge.waveSizeLB, challenge.waveSizeUB);
+            challengeSolution = challengeSolver.solve(stopWatch);
+        } catch (IloException e) {
+            e.printStackTrace();
+            return;
+        }
         challenge.writeOutput(challengeSolution, args[1]);
     }
 }
