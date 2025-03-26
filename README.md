@@ -22,12 +22,11 @@
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/mercadolibre/challenge-sbpo-2025
+    git clone https://github.com/kawazs/SBPO-ML-UNIFEI
     ```
 2. Set the paths to CPLEX and OR-Tools libraries in `run_challenge.py` if needed, e.g.:
     ```sh
     cplex_path = "$HOME/CPLEX_Studio2211/opl/bin/arm64_osx/"
-    or_tools_path = "$HOME/Documents/or-tools/build/lib/"
     ```
 
 ## Usage
