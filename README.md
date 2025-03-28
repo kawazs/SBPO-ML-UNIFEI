@@ -61,5 +61,5 @@ python checker.py <input_file> <solution_file>
     ```
 3. Check all (Linux):
     ```sh
-    for i in $(seq -w 1 20); do     python3 checker.py         /home/luiz/Doutorado/JAVA/challenge-sbpo-2025/datasets/a/instance_00${i}.txt         /home/luiz/Doutorado/JAVA/challenge-sbpo-2025/output/instance_00${i}.txt; done
+    for i in $(seq -w 1 20); do     python3 checker.py         /challenge-sbpo-2025/datasets/a/instance_00${i}.txt /challenge-sbpo-2025/output/instance_00${i}.txt; done
     ```
